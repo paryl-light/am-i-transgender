@@ -1,0 +1,27 @@
+// Primary colors.
+$blue: #237ec2;
+$dark-blue: #00205c;
+$yellow: #fcb31c;
+$orange: #d3281b;
+$grey: #ccc;
+
+// Utility colors.
+$text-color: $grey;
+$heading-color: $blue;
+$action-color: $blue;
+$action-color-hover: lighten($blue, 10%);
+$white: #fff;
+
+$link-color: $blue;
+$link-color-hover: $dark-blue;
+
+// Helper classes.
+.bg-blue { background-color: $blue; }
+.bg-orange { background-color: $orange; }
+.bg-dark-blue { background-color: $dark-blue; }
+.bg-yellow { background-color: $yellow; }
+
+.c-blue { color: $blue; }
+.c-orange { color: $orange; }
+.c-dark-blue { color: $dark-blue; }
+.c-yellow { color: $yellow; }

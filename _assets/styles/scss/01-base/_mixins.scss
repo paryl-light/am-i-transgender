@@ -1,0 +1,33 @@
+@mixin header-rgba($hex) {
+	$red: red($hex);
+	$blue: blue($hex);
+	$green: green($hex);
+	background-color: rgba(red($hex), green($hex), blue($hex), $opacity);
+}
+
+@mixin font($font, $size, $height, $weight) {
+	font-family: $font;
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+}
+
+@mixin overlay() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin font-awesome($char) {
+	content: $char;
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: inherit;
+	font-size: inherit;
+	padding-right: .5em;
+	display: inline;
+}
