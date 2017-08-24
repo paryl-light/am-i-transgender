@@ -1,3 +1,11 @@
 ---
-layout: default
+layout: home
 ---
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body{% if page.class %} class="{{ page.class | prepend: 'page--'  }}"{% else %} class="{{ page.layout | prepend: 'page--' }}"{% endif %}>
+        {{ content }}
+		{% include scripts.html %}
+    </body>
+</html>

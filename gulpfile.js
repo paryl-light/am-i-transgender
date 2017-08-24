@@ -401,7 +401,9 @@ gulp.task('serve', ['build:local'], function() {
 
     // Watch favicon.png.
     gulp.watch('favicon.png', ['build:jekyll:watch']);
-
+    gulp.src('')
+        .pipe(run('bundle exec jekyll serve --detach'))
+        .on('error', gutil.log);
 });
 
 

@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Index
+title: Am I Transgender?
 image: 
 page_id: '1'
-meta_title: Welcome
-meta_description: This is a great site
+meta_title: Am I Transgender?
+meta_description: 
 ---
 {% capture index %}{% include pages/index.md %}{% endcapture %}
 {{ index | markdownify }}
