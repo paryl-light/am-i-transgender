@@ -11,8 +11,8 @@ var paths = {};
 paths.assetsDir        = '_assets/';      // The files Gulp will handle.
 paths.jekyllDir        = '';              // The files Jekyll will handle.
 paths.jekyllAssetsDir  = 'assets/';       // The asset files Jekyll will handle.
-paths.siteDir          = '_site/';        // The resulting static site.
-paths.siteAssetsDir    = '_site/assets/'; // The resulting static site's assets.
+paths.siteDir          = 'docs/';        // The resulting static site.
+paths.siteAssetsDir    = 'docs/assets/'; // The resulting static site's assets.
 
 // Folder naming conventions.
 paths.postFolderName   = '_posts';

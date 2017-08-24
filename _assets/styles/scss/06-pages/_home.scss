@@ -28,9 +28,9 @@ body, html {
 #click-here {
     font-size: .1em;
     font-weight: 400;
-    color: lighten($black, 30%);
     line-height: 1em;
     margin-top: 30px;
+    color: lighten($black, 30%);
     #arrow {
         display: block;
         animation: click_transform 5s infinite;

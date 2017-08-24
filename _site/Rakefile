@@ -2,7 +2,7 @@ require 'html-proofer'
 
 task :test do
   HTMLProofer.check_directories(
-    ["./_site"], {
+    ["./docs"], {
       :allow_hash_href => true,
       :parallel => {:in_processes => 4},
       :only_4xx => true,

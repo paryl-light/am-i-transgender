@@ -255,7 +255,7 @@ gulp.task('build:jekyll', function() {
  * Runs the jekyll build command using the test and local config files.
  */
 gulp.task('build:jekyll:local', function() {
-    var shellCommand = 'bundle exec jekyll build --future --config _config.yml,_config.dev.yml';
+    var shellCommand = 'bundle exec jekyll build --destination docs/ --future --config _config.yml,_config.dev.yml';
 
     return gulp.src('')
         .pipe(run(shellCommand))
@@ -268,7 +268,7 @@ gulp.task('build:jekyll:local', function() {
  * Deletes the entire _site directory.
  */
 gulp.task('clean:jekyll', function(callback) {
-    del(['_site']);
+    del(['docs']);
     callback();
 });
 
@@ -390,7 +390,7 @@ gulp.task('serve', ['build:local'], function() {
 
     // Watch HTML and markdown files.
     gulp.watch(
-      ['**/*.+(html|md|markdown|MD)', '!_site/**/*.*', '!_styleguide_assets/**/*.*', '!_assets/styles/*.md'],
+      ['**/*.+(html|md|markdown|MD)', '!docs/**/*.*', '!_styleguide_assets/**/*.*', '!_assets/styles/*.md'],
       ['build:jekyll:watch']);
 
     // Watch RSS feed XML files.
