@@ -18,17 +18,16 @@
 	loadCSS('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,400,800');
 	</script>
 
-	{% if site.data.site.google_analytics_id %}
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	ga('create', '{{ site.data.site.google_analytics_id }}', 'auto');
+	ga('create', 'UA-57614007-2', 'auto');
 	ga('send', 'pageview');
+
 	</script>
-	{% endif %}
 	
 	{% if page.class %}
 		{% capture custom_critical_css %}css/critical--{{ page.class }}.css{% endcapture %}
