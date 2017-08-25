@@ -1,0 +1,15 @@
+---
+layout: home
+---
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body{% if page.class %} class="{{ page.class | prepend: 'page--'  }}"{% else %} class="{{ page.layout | prepend: 'page--' }}"{% endif %}>
+        <div class="hidden-header-home">
+            {% include regions/header.html %}
+            <div class="overlay"></div>
+        </div>
+        {{ content }}
+		{% include scripts.html %}
+    </body>
+</html>

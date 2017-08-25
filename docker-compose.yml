@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+    - "8000:80"
+    volumes:
+    - .\:/var/www
+    links:
+    - redis
+  redis:
+    image: redis
