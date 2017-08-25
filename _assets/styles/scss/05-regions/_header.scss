@@ -1,4 +1,5 @@
 $opacity: .9;
+/*
 #mobile-nav {
 	position: fixed;
 	@include header-rgba($blue);
@@ -47,7 +48,8 @@ $opacity: .9;
 		}
 	}
 }
-
+*/
+/*
 .menu-bar {
 	border-radius: 50%;
 	height: 35px;
@@ -77,7 +79,6 @@ $opacity: .9;
 		transition: background .25s ease 0s;
 		width: 45px;
 		span {
-			background: $blue;
 			display: block;
 			height: 5px;
 			left: 8px;
@@ -85,7 +86,7 @@ $opacity: .9;
 			right: 8px;
 			top: 16px;
 			width: 30px;
-			transition: background 0s ease .25s;
+			transition: background-color 0s ease .25s;
 			&:before,
 			&:after {
 				background-color: $blue;
@@ -109,6 +110,7 @@ $opacity: .9;
 		}
 	}
 }
+*/
 
 .list-nav {
 	list-style: none;
@@ -118,14 +120,77 @@ $opacity: .9;
 		zoom: 1;
 		*display: inline;
 		position: relative;
+		&.nav-color-pink {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $pink;
+			}
+		}
+		&.nav-color-blue {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $blue;
+			}
+		}
+		&.nav-color-white {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $white;
+			}
+		}
 		a {
-			padding: 10px 15px;
+			font-size: 24px;
+			font-weight: 900;
 			display: block;
+			overflow: hidden;
 			position: relative;
+			text-decoration: none;
+			> .nav-item-fg {
+				background-color: $white;
+				color: $black;
+				display: block;
+  				mix-blend-mode: darken;
+				position: relative;
+				padding: 10px 15px;
+				/*text-shadow: 1px 1px 0px $pink, -1px -1px 0px $blue;*/
+				z-index: 4;
+			}
+			>  .nav-item-bg {
+				display: block;
+				bottom: 0;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 2;
+				&:after, &:before {
+					bottom: 0;
+					content: '';
+					height: 100%;
+					position: absolute;
+					top: 0;
+					transition: right 1s cubic-bezier(.11,.53,.47,.91), left 1s cubic-bezier(.11,.53,.47,.91);
+					width: 100%;
+				}
+				&:after {
+					right: 100%;
+					z-index: 3;
+				}
+				&:before {
+					left: 100%;
+					z-index: 1;
+				}
+			}
+			&:hover {
+				>  .nav-item-bg {
+					&:after {
+						right: 0;
+					}
+					&:before {
+						left: 0;
+					}
+				}
+			}
 		}
 		ul {
 			display: none;
-			background: #ccc;
 			font-size: 14px;
 			left: 0;
 			min-width: 100%;
@@ -156,35 +221,50 @@ $opacity: .9;
 	}
 }
 
-.mini {
-    .menu-bar {
-        .toggle {
-            span {
-                background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-                &:before, &:after {
-                    transition-delay: 0s, 0.3s;
-                }
-                &:before {
-                    top: 0;
-                    transform: rotate(45deg);
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                }
-                &:after {
-                    bottom: 0;
-                    transform: rotate(-45deg);
-                    -webkit-transform: rotate(-45deg);
-                    -ms-transform: rotate(-45deg);
-                }
-            }
-        }
-    }
-    #mobile-nav {
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
-        display: block;
-    }
+.hidden-header-home {
+	opacity: 0;
+	pointer-events: none;
+    position: absolute;
+	height: 100%;
+	transition: opacity 1s ease;
+	visibility: hidden;
+	width: 100%;
+	z-index: 11;
+    .overlay {
+        background-color: rgba(0, 0, 0, .8);
+        height: 100%;
+        width: 100%;
+	}
+	.region--header {
+		bottom: 0;
+		height: 500px;
+		overflow: auto;
+		left: 0;
+		margin: auto;
+		max-height: 100%;
+		max-width: 100%;
+		padding: 30px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: -100px;
+		width: 500px;
+		.header-navigation {
+			display: block;
+			.list-nav {
+				background-color: $gray;
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	li {
+		display: block;
+	}
+	&.show-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+	}
 }

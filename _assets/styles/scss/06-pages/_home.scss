@@ -17,12 +17,14 @@ body, html {
     font-size: 10em;
     font-weight: 600;
     height: 1em;
+    left: 0;
     line-height: 1em;
     margin: auto;
     position: absolute;
+    right: 0;
     text-align: center;
     top: 0;
-    width: 100%;
+    width: 500px;
 }
 
 #click-here {
@@ -39,7 +41,6 @@ body, html {
         -o-animation: click_transform 5s infinite;
     }
 }
-
 @keyframes click_transform {
     0% {
         transform: translateY(0);

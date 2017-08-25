@@ -123,6 +123,7 @@ gulp.task('clean:styles', function(callback) {
 gulp.task('build:scripts:global', function() {
     return gulp.src([
         paths.jsFiles + '/global/lib/jquery-2.1.3.min.js',
+        paths.jsFiles + '/global/lib/modernizr-custom.js',
         paths.jsFiles + '/global/bootstrap/tether.min.js',
         paths.jsFiles + '/global/bootstrap/bootstrap.min.js',
         paths.jsFiles + '/global/forms' + paths.jsPattern, 

@@ -1,28 +1,29 @@
 // Primary colors.
-$blue: #237ec2;
-$dark-blue: #00205c;
-$yellow: #fcb31c;
-$orange: #d3281b;
-$grey: #ccc;
-
-// Utility colors.
-$text-color: $grey;
-$heading-color: $blue;
-$action-color: $blue;
-$action-color-hover: lighten($blue, 10%);
+$gray: #ccc;
+$pink: #F5A9B8;
+$blue: #5BCEFA;
 $white: #fff;
 $black: #000;
 
+// Utility colors.
+$text-color: $black;
+$heading-color: $black;
+
+//ftm colors
+$action-ftm-color: $blue;
+$action-ftm-color-hover: darken($blue, 10%);
 $link-color: $blue;
-$link-color-hover: $dark-blue;
+$link-color-hover: darken($blue, 10%);
+
+//mtf colors
+$action-mtf-color: $pink;
+$action-mtf-color-hover: darken($pink, 10%);
+$link-color: $pink;
+$link-color-hover:darken($pink, 10%);
 
 // Helper classes.
+.bg-pink { background-color: $pink; }
 .bg-blue { background-color: $blue; }
-.bg-orange { background-color: $orange; }
-.bg-dark-blue { background-color: $dark-blue; }
-.bg-yellow { background-color: $yellow; }
 
+.c-pink { color: $pink; }
 .c-blue { color: $blue; }
-.c-orange { color: $orange; }
-.c-dark-blue { color: $dark-blue; }
-.c-yellow { color: $yellow; }

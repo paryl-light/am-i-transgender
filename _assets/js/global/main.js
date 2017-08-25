@@ -1,6 +1,11 @@
 // MOBILE MENU TRIGGER
-$(document).on('ready', function() {
-	$('.menu-bar .toggle').on('click', function () {
-		$('body').toggleClass('mini');
-	})
+$(window).on('load', function() {
+	$('#answer').on('click', function () {
+		console.log('click');
+		$('.hidden-header-home').toggleClass('show-nav');
+	});
+	$('.overlay').on('click', function () {
+		console.log('click');
+		$('.hidden-header-home').toggleClass('show-nav');
+	});
 })
