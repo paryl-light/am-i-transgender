@@ -222,22 +222,27 @@ $opacity: .9;
 }
 
 .hidden-header-home {
-	opacity: 0;
 	pointer-events: none;
     position: absolute;
 	height: 100%;
-	transition: opacity 1s ease;
-	visibility: hidden;
 	width: 100%;
 	z-index: 11;
     .overlay {
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 1s ease, pointer-events 1s ease 1s;
+		visibility: hidden;
         background-color: rgba(0, 0, 0, .8);
         height: 100%;
         width: 100%;
 	}
 	.region--header {
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.1s ease 2s, pointer-events 1s ease 1s;
+		visibility: hidden;
 		bottom: 0;
-		height: 500px;
+		height: 340px;
 		overflow: auto;
 		left: 0;
 		margin: auto;
@@ -263,8 +268,18 @@ $opacity: .9;
 		display: block;
 	}
 	&.show-nav {
-		opacity: 1;
 		pointer-events: auto;
-		visibility: visible;
+    	.overlay {
+			opacity: 1;
+			pointer-events: auto;
+			transition: opacity 0.1s ease, pointer-events 0.1s ease;
+			visibility: visible;
+		}
+		.region--header {
+			opacity: 1;
+			pointer-events: auto;
+			transition: opacity 0.1s ease, pointer-events 0.1s ease;
+			visibility: visible;
+		}
 	}
 }
