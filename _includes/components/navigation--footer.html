@@ -1,0 +1,24 @@
+<nav role="navigation" class="footer-navigation">
+	<ul>
+		{% for item in site.data.nav_menus %} 
+			{% if item.name == 'Quick Links' %}
+				{% for nav in item.items %}
+					{% if nav.page.name == "Blue Water Development" %}
+						<li>
+							<a href="{{site.url}}">Home</a>
+						</li>
+					{% elsif nav.link_type == "external" %}
+						<li>
+							<a target="{{ nav.target }}" href="{{ nav.link }}">{{ nav.name }}</a>
+						</li>
+					{% else %}
+						<li>
+							<a href="{{site.url}}/{{ nav.page.url }}">{{ nav.page.name }}</a>
+						</li>
+					{% endif %} 
+				{% endfor %}
+			{% endif %}  
+		{% endfor %}
+		<div class="clearfix"></div>
+	</ul>
+</nav>

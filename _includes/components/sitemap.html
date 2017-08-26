@@ -1,0 +1,24 @@
+<ul>
+    {% for item in site.data.pages %} 
+        {% if item.parent_id == '0' and item.name != 'Site Map' %}
+        <li>
+            <a href="{{site.url}}/{{ item.url }}">{{ item.name }}</a> 
+            {% if item.short_description %}
+                - {{ item.short_description }}
+            {% endif %}
+            
+            {% assign children = site.data.pages | where: "parent_id",item.id %}
+            <ul>
+                {% for child in children %} 
+                    <li>
+                        <a href="{{site.url}}/{{ child.url }}">{{ child.name }}</a> 
+                        {% if child.short_description %}
+                            - {{ child.short_description }}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

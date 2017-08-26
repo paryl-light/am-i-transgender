@@ -1,0 +1,25 @@
+---
+title: Your awesome title
+email: your-email@domain.com
+description: 'Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+
+'
+baseurl: ''
+url: ''
+markdown: kramdown
+permalink: "/:title/"
+exclude:
+- vendor
+- _assets
+- Gemfile
+- Gemfile.lock
+- gulpfile.js
+- node_modules
+- package.json
+gems:
+# - html-proofer
+- scss_lint
+- mdl
+- jekyll-sitemap

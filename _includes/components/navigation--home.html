@@ -1,0 +1,45 @@
+<nav role="navigation" class="header-navigation">
+	<ul class="list-nav">
+		{% for item in site.data.pages %} 
+			{% if item.id == page.page_id %} 
+				{% assign active_class = " active" %} 
+			{% else %} 
+				{% assign active_class = "" %} 
+			{% endif %}
+			{% comment %}
+			<li class="has-dropdown {{active_class}}">
+				<a href="{{site.url}}/{{ item.url }}">{{ item.name }}</a>
+				<ul class='dropdown'>
+					{% for child in nav.children %}
+					<li>
+						<a href="{{site.url}}/{{ child.page.url }}">
+							{{ child.name }}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</li>
+			{% endcomment %}
+			{% if item.name == "Home" %}
+				{% if item.color != '' %}
+					{% assign navColor = item.color %}
+				{% else %}
+					{% assign navColor = 'default' %}
+				{% endif %} 
+				<li class="nav-color-{{navColor}}{{active_class}}">
+					<a href="{{site.url}}/">
+						<span class="nav-item-fg">{{ item.name }}</span>
+						<span class="nav-item-bg"></span>
+					</a>
+				</li>
+			{% else %}
+				<li class="nav-color-{{item.color}}{{active_class}}">
+					<a href="{{site.url}}/{{ item.url }}">
+						<span class="nav-item-fg">{{ item.name }}</span>
+						<span class="nav-item-bg"></span>
+					</a>
+				</li>
+			{% endif %} 
+		{% endfor %}
+	</ul>
+</nav>

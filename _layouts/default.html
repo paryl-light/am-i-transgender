@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body{% if page.class %} class="{{ page.class | prepend: 'page--'  }}"{% else %} class="{{ page.layout | prepend: 'page--' }}"{% endif %}>
+		{% include components/navigation--mobile.html %}
+        {% include regions/header.html %}
+
+        <div class="container">
+        	{{ content }}
+        </div>
+
+        {% include regions/footer.html %}
+		{% include scripts.html %}
+    </body>
+
+</html>
