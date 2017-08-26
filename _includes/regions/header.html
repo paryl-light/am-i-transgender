@@ -1,7 +1,11 @@
 <header class="region--header" role="banner">
-	
-	{%comment%}{% include components/mobile-toggle.html %}{%endcomment%}
+	{% if page.page_id != "1" %}
+		{% include components/mobile-toggle.html %}
+		<div class="container">
+	{% endif %}
 	
 	{% include components/navigation--home.html %}
-	
+	{% if page.page_id != "1" %}
+		</div>
+	{% endif %}
 </header>
