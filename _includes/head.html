@@ -34,5 +34,7 @@
 	{% else %}
 		{% capture custom_critical_css %}css/critical--{{ page.layout }}.css{% endcapture %}
 	{% endif %}
-	<style>{% include {{ custom_critical_css }} %}</style>
+	<style>
+		{% include {{ custom_critical_css }} %}
+	</style>
 </head>
