@@ -13,7 +13,6 @@ _includes/content_blocks
 
 # Build items
 node_modules
-assets
 _includes/css
 .htaccess
 /nbproject/
