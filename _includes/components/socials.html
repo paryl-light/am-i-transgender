@@ -1,0 +1,9 @@
+<ul class='socials'>
+	{% for social in site.data.vars.social %}
+		{% if social[1].url %}
+			<a target="_blank" href="{{social[1].url}}" class="social-link {{social[1].name | downcase}}">
+				<i class="fa fa-{{social[1].name | downcase}}"></i>
+			</a>
+		{% endif %}
+	{% endfor %}
+</ul>
