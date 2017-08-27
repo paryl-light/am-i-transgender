@@ -1,0 +1,63 @@
+{
+  "business": {
+    "address": "",
+    "city": "",
+    "email_address": "alyssa.videlock@gmail.com",
+    "name": "Am I Transgender?",
+    "phone": "",
+    "state": "",
+    "zip": ""
+  },
+  "business_address": null,
+  "business_citystatezip": null,
+  "business_name": null,
+  "business_phone": null,
+  "email_address": null,
+  "email_icon": "",
+  "facebook_icon": "",
+  "facebook_url": null,
+  "googleplus_icon": "",
+  "googleplus_url": null,
+  "instagram_icon": "",
+  "instagram_url": null,
+  "linkedin_icon": "",
+  "linkedin_url": null,
+  "pinterest_icon": "",
+  "pinterest_url": null,
+  "social": {
+    "facebook": {
+      "name": "Facebook",
+      "url": ""
+    },
+    "googleplus": {
+      "name": "Google+",
+      "url": null
+    },
+    "instagram": {
+      "name": "Instagram",
+      "url": null
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "url": null
+    },
+    "pinterest": {
+      "name": "Pinterest",
+      "url": null
+    },
+    "twitter": {
+      "name": "Twitter",
+      "url": null
+    },
+    "youtube": {
+      "name": "YouTube",
+      "url": null
+    }
+  },
+  "twitter_icon": "",
+  "twitter_url": null,
+  "yelp_icon": "",
+  "yelp_url": null,
+  "youtube_icon": "",
+  "youtube_url": null
+}
