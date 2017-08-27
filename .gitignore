@@ -3,12 +3,7 @@
 _logs
 
 # Data
-_specials
-_staff
-_properties
-_posts
-_includes/pages
-_includes/content_blocks
+_site
 
 # Build items
 node_modules
