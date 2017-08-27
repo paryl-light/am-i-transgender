@@ -1,0 +1,17 @@
+.page--basic__header {
+    line-height: 1em;
+    background-color: $white;
+    margin-bottom: 50px;
+    text-align: center;
+    &::before, &::after {
+        content: '';
+        display: block;
+        padding: 3em
+    }
+    &::before {
+        background-image: linear-gradient(0deg, $blue 50%, $pink 50%);
+    }
+    &::after {
+        background-image: linear-gradient(0deg, $pink 50%, $blue 50%);
+    }
+}
