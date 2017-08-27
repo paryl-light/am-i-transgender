@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "url": "https://www.reddit.com/r/asktransgender/",
+        "name": "Ask Transgender",
+        "description": "A place for anyone to ask transgender people questions.",
+        "category": "general",
+        "color": "#000"
+    },
+    {
+        "id": 2,
+        "url": "https://www.reddit.com/r/MtF/",
+        "name": "Subreddit for Male to Female",
+        "description": "A safe space for transwomen to meet and converse.",
+        "category": "mtf",
+        "color": "#F5A9B8"
+    },
+    {
+        "id": 3,
+        "url": "https://www.reddit.com/r/FtM/",
+        "name": "Subreddit for Female to Male",
+        "description": "A safe space for transmen to meet and converse",
+        "category": "ftm",
+        "color": "#5BCEFA"
+    },
+    {
+        "id": 4,
+        "url": "https://www.reddit.com/r/NonBinary/",
+        "name": "Subreddit for NonBinary",
+        "description": "",
+        "category": "nonbinary",
+        "color": "#ccc"
+    },
+    {
+        "id": 5,
+        "url": "https://www.reddit.com/r/ABraThatFits/wiki/manual_sizing_guide",
+        "name": "Manual Sizing Guide for Bras",
+        "description": "A guide from ABraThatFits that describes how to measure your breasts for the perfect fitting bra.",
+        "category": "mtf",
+        "color": "#F5A9B8"
+    },
+    {
+        "id": 6,
+        "url": "https://therapists.psychologytoday.com/",
+        "name": "Find nearby therapists!",
+        "description": "A website that lists therapists near you, sortable and searchable!",
+        "category": "general",
+        "color": "#000"
+    },
+    {
+        "id": 7,
+        "url": "https://www.bhcfe.org/documents/resources/welcoming_our_trans_family_and_friends.pdf",
+        "name": "Welcoming our Trans Family and Friends",
+        "description": "A support guide for parents, families and friends of transgender and gender non-conforming people.",
+        "category": "general",
+        "color": "#000"
+    },
+    {
+        "id": 8,
+        "url": "https://www.reddit.com/r/mypartneristrans",
+        "name": "My Partner is Trans",
+        "description": "A place for people whose partner is transgender or gender non-conforming.",
+        "category": "general",
+        "color": "#000"
+    },
+    {
+        "id": 9,
+        "url": "http://transpulseproject.ca/wp-content/uploads/2012/10/Impacts-of-Strong-Parental-Support-for-Trans-Youth-vFINAL.pdf",
+        "name": "Impacts of Strong Parental Support for Trans Youth",
+        "description": "The health impacts of parental support for trans youth.",
+        "category": "general",
+        "color": "#000"
+    },
+    {
+        "id": 10,
+        "url": "https://transgendersg.com/",
+        "name": "Singaporean Transgender Community",
+        "description": "A community of Singaporean transgender people with information useful for people in Singapore.",
+        "category": "location:singapore",
+        "color": "#000"
+    },
+    {
+        "id": 11,
+        "url": "http://transascity.org/quality-of-life-in-treated-transsexuals/",
+        "name": "Quality of life in treated transsexuals",
+        "description": "A look into the quality of life for people who start transitioning",
+        "category": "general",
+        "color": "#000"
+    },
+    {
+        "id": 12,
+        "url": "https://i.imgur.com/tc9Mvb5.jpg",
+        "name": "FtM HRT Effect Timeline",
+        "description": "A timeline of expected changes for transgender FtM individuals.",
+        "category": "ftm",
+        "color": "#5BCEFA"
+    },
+    {
+        "id": 13,
+        "url": "http://i.imgur.com/MN5MYrW.png",
+        "name": "MtF HRT Effect Timeline",
+        "description": "A timeline of expected changes for transgender MtF individuals.",
+        "category": "mtf",
+        "color": "#000"
+    },
+    {
+        "id": 14,
+        "url": "https://www.researchgate.net/file.PostFileLoader.html?id=58f2401696b7e4b82406e744&assetKey=AS%3A483434297597952%401492271126592",
+        "name": "Hormones: A Guide for FTMs",
+        "description": "A pdf guide for FtM individuals about hormone effects, involved medications/dosages, changes, side effects/risks, and other useful information",
+        "category": "FtM",
+        "color": "#000"
+    },
+    {
+        "id": 15,
+        "url": "",
+        "name": "",
+        "description": "",
+        "category": "",
+        "color": "#000"
+    }
+]

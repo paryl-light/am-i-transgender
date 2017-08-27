@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Home",
+    "slug": "home",
+    "url": "index",
+    "layout": "home.html",
+    "meta_title": "Am I Transgender?",
+    "meta_description": "A resource, guide, and overall helpful place for transgender and transgender questioning individuals",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white"
+  },
+  {
+    "id": "2",
+    "name": "MtF Resources",
+    "slug": "trans-resources-mtf",
+    "url": "trans-resources-mtf",
+    "layout": "page",
+    "meta_title": "Resources for MtF Transgender People",
+    "meta_description": "Need help? Here you can find resources for (almost) all your MtF transgender needs!",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "pink"
+  },
+  {
+    "id": "3",
+    "name": "FtM Resources",
+    "slug": "trans-resources-ftm",
+    "url": "trans-resources-ftm",
+    "layout": "page",
+    "meta_title": "Resources for FtM Transgender People",
+    "meta_description": "Need help? Here you can find resources for (almost) all your FtM transgender needs!",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "blue"
+  },
+  {
+    "id": "4",
+    "name": "Nonbinary Resources",
+    "slug": "trans-resources-nonbinary",
+    "url": "trans-resources-nonbinary",
+    "layout": "page",
+    "meta_title": "Resources for nonbinary Transgender People",
+    "meta_description": "Need help? Here you can find resources for (almost) all your nonbinary transgender needs!",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white"
+  },
+  {
+    "id": "5",
+    "name": "Questioning Resources",
+    "slug": "trans-resources-questioning",
+    "url": "trans-resources-questioning",
+    "layout": "page",
+    "meta_title": "Resources for Questioning Individuals",
+    "meta_description": "Confused? Not sure about your gender? Something else? Find something here!",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white"
+  }
+]

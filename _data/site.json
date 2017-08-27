@@ -1,0 +1,28 @@
+{
+  "id": "0",
+  "key": "",
+  "active": "1",
+  "name": "Am I Transgender?",
+  "slug": "am-i-transgender",
+  "meta_name": "Am I Transgender",
+  "meta_title": "[PAGE_NAME] |  [SITE_NAME]",
+  "meta_description": "A resource for those questioning their gender.",
+  "hostname": "am-i-transgender.com",
+  "repo": "oc-motels/the-spinnaker-website",
+  "repo_id": "1558",
+  "sub_path": null,
+  "google_analytics_id": "",
+  "description": null,
+  "date_created": "2017-08-21 23:47:57",
+  "date_updated": "2017-08-23 09:16:42",
+  "featureOptions": [
+    {
+    }
+  ],
+  "features": [
+    "forms",
+    "gallery",
+    "specials",
+    "header_images"
+  ]
+}
