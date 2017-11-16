@@ -134,6 +134,11 @@ $opacity: .9;
 				background-color: $white;
 			}
 		}
+		&.nav-color-purple {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $purple;
+			}
+		}
 		a {
 			font-size: 18px;
 			font-weight: 900;
